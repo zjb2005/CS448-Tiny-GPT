@@ -66,7 +66,8 @@ pip install datasets
 python get_data.py     # downloads and cleans the data -> data/stories.txt
 python train.py        # trains the model -> ckpt.pt, loss_curve.png, samples.txt
 python chat.py         # type prompts and see what it writes
-python web_demo.py     # same thing but as a web page (needs: pip install gradio)
+python web_demo.py
+* nohup python3 web_demo.py > web.log 2>&1 &    # same thing but as a web page (needs: pip install gradio)
 ```
 
 `python train.py quick` runs a much smaller version that finishes in under a minute
